@@ -11,9 +11,16 @@
     <body>
         <nav class="w3-bar w3-card-4 w3-flat-pumpkin w3-top">
             <a class="w3-bar-item w3-button w3-hover-red" onclick="showHelp('logo')"><i class="fa fa-home"></i></a>
-            <a class="w3-bar-item w3-button w3-hover-red" href="#">Link 1</a>
-            <a class="w3-bar-item w3-button w3-hover-red w3-right" href="#"><i class="fa fa-bars"></i></a>
+            <a class="w3-bar-item w3-button w3-hover-red w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
         </nav>
+        <!-- Sidebar -->
+        <div class="w3-sidebar w3-bar-block" style="display:none" id="pageMenu">
+            <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+  
         <header class="w3-container w3-flat-carrot w3-padding-32">
             <h1>Main Header</h1>
             <p>
@@ -23,7 +30,7 @@
             </p>
             <div class="w3-row-padding">
                 <div class="w3-col s12 m6 l4">
-                    <div class="w3-card w3-round">
+                    <div class="w3-card-4">
                         <img src="https://res.cloudinary.com/drzjshskk/image/upload/v1683298371/tekak-tekuk/samples/tray_tftkfe.png" alt="Anyaman Tray" width="100%">
                     </div>
                 </div>                
@@ -45,23 +52,25 @@
             </p>
         </header>
 
-        <section>
-            <article>
-                <h2>First article</h2>
-                <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
-            </article>
-
-            <article>
-                <h2>Second article</h2>
-                <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
-            </article>
-
-            <article>
-                <h2>Third article</h2>
-                <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
-                <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo 8-bit. Intelligentsia umami wayfarers pickled, asymmetrical kombucha letterpress kitsch leggings cold-pressed squid chartreuse put a bird on it. Listicle pickled man bun cornhole heirloom art party.</p>
-            </article>
-        </section>
+        <main class="w3-main">
+            <section class="w3-content">
+                <article>
+                    <h2>First article</h2>
+                    <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
+                </article>
+    
+                <article>
+                    <h2>Second article</h2>
+                    <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
+                </article>
+    
+                <article>
+                    <h2>Third article</h2>
+                    <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewriter. Tacos PBR&B pork belly, everyday carry ennui pickled sriracha normcore hashtag polaroid single-origin coffee cold-pressed. PBR&B tattooed trust fund twee, leggings salvia iPhone photo booth health goth gastropub hammock.</p>
+                    <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui. Organic small batch paleo 8-bit. Intelligentsia umami wayfarers pickled, asymmetrical kombucha letterpress kitsch leggings cold-pressed squid chartreuse put a bird on it. Listicle pickled man bun cornhole heirloom art party.</p>
+                </article>
+            </section>    
+        </main>
     </body>
     <script src="scripts/home.js"></script>
 </html>
