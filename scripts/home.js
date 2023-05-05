@@ -18,3 +18,13 @@ function w3_close() {
     document.getElementById("pageMenu").style.display = "none";
 }
 
+showArticle = async (page) => {
+    const txt = await fetch(page).then(x => x.text()).then((y) => {
+        const html = marked.parse(y, {
+            gfm: true
+        });
+        return html;
+    });
+    document.getElementById("anyaman").innerHTML = txt;
+    w3_close();
+}
