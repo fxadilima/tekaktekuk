@@ -20,10 +20,12 @@ function w3_close() {
 
 showArticle = async (page) => {
     const txt = await fetch(page).then(x => x.text()).then((y) => {
+        /*
         const html = marked.parse(y, {
             gfm: true
         });
-        return html;
+        */
+        return y;
     });
     document.getElementById("anyaman").innerHTML = txt;
     w3_close();
