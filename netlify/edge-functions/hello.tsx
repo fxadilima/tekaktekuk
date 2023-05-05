@@ -10,7 +10,7 @@ export default async (request: Request, context: Context) => {
 <h1>Testing Failed</h1>
 <p>Most likely we could not fetch()</p>
 `;
-    await fetch("https://tekaktekuk.id/articles/anyaman-bambu.md")
+    await fetch(context.site.url + "/articles/anyaman-bambu.md")
     .then(x => x.text())
     .then(async (y) => {
         const codes = await compile(y, {
