@@ -17,7 +17,7 @@
         <div class="w3-sidebar w3-bar-block" style="display:none" id="pageMenu">
             <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
             <a href="#anyaman" class="w3-bar-item w3-button" onclick="w3_close()">Apa itu anyaman?</a>
-            <a href="#anyaman-bambu" class="w3-bar-item w3-button" onclick="w3_close()">Anyaman Bambu</a>
+            <a href="#anyaman-bambu" class="w3-bar-item w3-button" onclick="showArticle('/articles/anyaman-bambu.md')">Anyaman Bambu</a>
             <a href="#tempat-nasi" class="w3-bar-item w3-button" onclick="w3_close()">Tempat Nasi Dari Bambu</a>
         </div>
         <header class="w3-container w3-flat-carrot w3-padding-32">
@@ -115,4 +115,5 @@
         </main>
     </body>
     <script src="scripts/home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </html>
