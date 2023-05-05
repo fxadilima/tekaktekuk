@@ -9,3 +9,12 @@ showHelp = (topik) => {
     }
 }
 
+function w3_open() {
+    document.getElementById("pageMenu").style.width = "100%";
+    document.getElementById("pageMenu").style.display = "block";
+}
+  
+function w3_close() {
+    document.getElementById("pageMenu").style.display = "none";
+}
+
