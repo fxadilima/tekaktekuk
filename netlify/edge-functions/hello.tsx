@@ -10,7 +10,7 @@ export default async (request: Request, context: Context) => {
 <h1>Testing Failed</h1>
 <p>Most likely we could not fetch()</p>
 `;
-    await fetch("/documents/testing.mdx")
+    await Deno.readTextFile("../documents/testing.mdx")
     .then(x => x.text())
     .then(async (y) => {
         const codes = await compile(y, {
